@@ -1,0 +1,11 @@
+{
+	"id": "more-callouts",
+	"name": "More Callouts",
+	"version": "1.0.1",
+	"minAppVersion": "0.15.0",
+	"description": "This is a plugin that provides various callouts.",
+	"author": "Obsidian",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": false
+}
