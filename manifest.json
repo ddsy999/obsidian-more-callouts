@@ -1,7 +1,7 @@
 {
 	"id": "more-callouts",
 	"name": "More Callouts",
-	"version": "1.0.1",
+	"version": "2.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "This is a plugin that provides various callouts.",
 	"author": "Choi jisoo",
