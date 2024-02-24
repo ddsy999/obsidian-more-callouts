@@ -7,15 +7,10 @@ export default class MoreCalloutPlugin extends Plugin {
     calloutManager : CalloutPluginManager;
 
     onload() {
-        console.log('Callout plugin loaded');
         this.registerMarkdownPostProcessor((el: HTMLElement, ctx: MarkdownPostProcessorContext) => {
             this.processMoreCallouts(el);
         });
     }
-
-    // onunload() {
-    //     console.log('Callout plugin unloaded');
-    // }
 
     processMoreCallouts(el: HTMLElement) {
         const calloutElements = el.querySelectorAll('.callout');
