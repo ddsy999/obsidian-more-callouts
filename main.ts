@@ -13,9 +13,9 @@ export default class MoreCalloutPlugin extends Plugin {
         });
     }
 
-    onunload() {
-        console.log('Callout plugin unloaded');
-    }
+    // onunload() {
+    //     console.log('Callout plugin unloaded');
+    // }
 
     processMoreCallouts(el: HTMLElement) {
         const calloutElements = el.querySelectorAll('.callout');

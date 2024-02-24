@@ -20,13 +20,8 @@ export class CalloutPluginManager {
                 this.converCalloutToProof();
                 break;
             default:
-                this.defaultMethod();
                 break;
         }
-    }
-
-    defaultMethod(){
-        console.log('More-Callout Case Defult');
     }
 
     converCalloutToProof(){
