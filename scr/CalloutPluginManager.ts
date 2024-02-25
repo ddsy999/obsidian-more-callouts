@@ -5,13 +5,19 @@ export class CalloutPluginManager {
     // callout elements 
     public dataCallout : string|null; // callout prefix 
     public calloutElement : HTMLElement; // callout HTML 
-    public calloutContent : string |undefined; // callout Content
+    public calloutContent : string |null; // callout Content
     
     // constructor 
     constructor(calloutElement: HTMLElement){
         this.calloutElement = calloutElement;
         this.dataCallout = calloutElement.getAttribute('data-callout');
-        this.calloutContent = this.calloutElement?.querySelector('.callout-content')?.innerHTML;
+        const calloutContentElement  = this.calloutElement?.querySelector('.callout-content');
+        
+        if (calloutContentElement) {
+            const content = calloutContentElement.textContent;
+            this.calloutContent = content;
+        }
+
     }
 
     convertCallout() {
